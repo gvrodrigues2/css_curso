@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img {     
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain {
+            object-fit: contain;;
+        }
+
+        #cover {
+            object-fit: cover;
+        }
+
+        #none {
+            object-fit: none;
+        }
+
+        #scale-down {
+            object-fit: scale-down;
+        }
+
+        #1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 30px 50%; /* desloca a imagem com relação ao eixo 'X' e o eixo 'Y' */
+                            /* pode também usar palavras chave [eixo X] - LEFT e RIGHT // [eixo Y] - TOP, CENTER e BOTTOM */
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code></h1>
+
+    <code>object-fit: fill; </code> (padrão)
+    <div> 
+        <img id="fill" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8LDzx7MwMso7fncp8DFCDU-6ihsSDbpsgXJ0DglqqYR8xGlij">
+    </div>
+
+    <br>
+
+    <code>object-fit: contain; </code>
+    <div> 
+        <img id="contain" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8LDzx7MwMso7fncp8DFCDU-6ihsSDbpsgXJ0DglqqYR8xGlij">
+    </div>
+
+    <br>
+
+    <code>object-fit: cover; </code>
+    <div> 
+        <img id="cover" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8LDzx7MwMso7fncp8DFCDU-6ihsSDbpsgXJ0DglqqYR8xGlij">
+    </div>
+    
+    <br>
+
+    <code>object-fit: none; </code>
+    <div> 
+        <img id="none" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8LDzx7MwMso7fncp8DFCDU-6ihsSDbpsgXJ0DglqqYR8xGlij">
+    </div>
+    
+    <br>
+
+    <code>object-fit: scale-down; </code>
+    <div> 
+        <img id="scale-down" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8LDzx7MwMso7fncp8DFCDU-6ihsSDbpsgXJ0DglqqYR8xGlij">
+    </div>
+    
+    <br>
+
+    <h1>Propriedade <code>object-position</code></h1>
+    <div> 
+        <img id="1" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8LDzx7MwMso7fncp8DFCDU-6ihsSDbpsgXJ0DglqqYR8xGlij">
+    </div>
+</body>
+</html>

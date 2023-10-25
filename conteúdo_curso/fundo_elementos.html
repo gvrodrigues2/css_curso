@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        .exemplo_alterando_fundo {
+            background-image: url('caminho da imagem'); /* usar imagem de fundo [para usar duas imagens é só inserir as duas separadas por vírgula] */
+            background-image: linear-gradient(black, white); /* define uma imagem em gradiente [primeira cor é a que começa e a segunda a que termina] */
+            background-image: radial-gradient(black, white); /* mesmo estilo do gradiente, sendo que ela altera do meio para as pontes */
+            background-image: repeating-linear-gradient(to top, black 0 20px, white 20px 40px); /* repete as cores, nesse exemplo foi feito listras */
+        }
+
+        .exemplo_redimensionando_imagens_de_fundo {
+            background-size: auto; /* imagem se ajusta automaticamente */
+            background-size: cover; /*  */
+            background-size: contain; /* dimensiona a imagem para que ela apareça completamente */
+            background-size: 300px; /* determina o tamanho que vai ocupar da largura */
+            background-size: 100% 50%; /* reajusta a imagem conforme tamanhos passados */
+            background-size: contain, cover; /* para caso de imagens sobrepostas, é especificado como elas duas ocuparão o espaço */
+        }
+
+        .exemplo_repetição_das_imagens_de_fundo {
+            background-repeat: repeat; /* faz com que a imagem se repita em todas as direções */
+            background-repeat: repeat-x; /* a imagem só vai se repetir no eixo x */
+            background-repeat: repeat-y; /* a imagem só vai se repetir no eixo y */
+            background-repeat: space; /* a imagem vai se repetir sem cortar, mas com espaço entre elas */
+            background-repeat: round; /* a imagem vai se repetir sem cortas em toda a extensão do espaço destinado [redimensionando a mesma] */
+            background-repeat: no-repeat; /* a imagem não vai se repetir */
+        }
+
+        .exemplo_posicionamento_das_imagens_de_fundo {
+            background-position: 200px 100px; /* também pode ser usado [top], [left] , [right], [bottom], ou serem usados valores na horizontal e vertical*/
+        }
+
+        .exemplo_propriedade_background_attachment {
+            background-attachment: fixed; /* a imagem de fundo fica fixa mesmo sendo rolado a página */
+            background-attachment: scroll; /* a imagem fica move junto com o scroll da página */
+            background-attachment: local; /* a imagem vai mover conforme o scroll do local onde estiver */
+        }
+
+        .exemplo_propriedade_background_origin {
+            background-origin: padding-box; /* a imagem vai ficar sobreposta a uma borda/padding */
+            background-origin: border-box; /* a borda/padding vai ficar sobreposta a imagem original */
+            background-origin: content-box; /* a borda/padding vai ficar um pouco afastada da imagem */
+        }
+
+        .exemplo_propriedade_bacground_clip {
+            background-clip: padding-box; /* a imagem vai ficar sobreposta a uma borda/padding */
+            background-clip: border-box; /* a borda/padding vai ficar sobreposta a imagem original */
+            background-clip: content-box; /* a borda/padding vai ficar um pouco afastada da imagem */
+            -webkit-background-clip: text; /* faz com que o fundo que foi aplicado para o background seja aplicado ao texto */
+            color: transparent; /* oculta a cor do texto para que seja usado o background de fundo */
+            background-clip: text;
+        }
+
+        .exemplo_mesclagem {
+            background-blend-mode: multiply;
+            background-blend-mode: screen;
+            background-blend-mode: overlay;
+            background-blend-mode: darken;
+            background-blend-mode: color-dodge;
+            background-blend-mode: color-burn;
+            background-blend-mode: difference;
+            background-blend-mode: exclusion;
+            background-blend-mode: hue;
+            background-blend-mode: saturation;
+            background-blend-mode: luminosity;
+            background-blend-mode: hard-light;
+            background-blend-mode: soft-light;
+            background-blend-mode: color;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

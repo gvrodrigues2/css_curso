@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        p {
+            text-transform: none;   /* [capitalize] - transforma a primeira letra das palavras em maiúsculo e mantém o texto como foi digitado */
+                                    /* [uppercase] - transforma todo o texto em caixa alta */
+                                    /* [lowercase] - transforma todo o texto em minúsculo */
+            padding: 10px;
+            background-color: lavender;
+            text-align: left; /* [right], [center] */
+            text-indent: 50px;
+            letter-spacing: 1px; /* adiciona um espaçamento entre cada caractere */
+            word-spacing: 5px; /* adiciona um espaçamento entre cada palavra */
+            white-space: normal; /* define como os espaços em branco do texto serão: [normal] - é o valor normal sem alterações*/
+                                                                            /* [nowrap] - ele não permite que aconteça a quebra de linha */
+                                                                            /* [pre] - faz com que os espaços em branco sejam exatamente como foi escrito */
+                                                                            /* [pre-line] - */
+                                                                            /* [pre-wrap] - os espaços em branco são preservados */
+                                                                            /* [break-spaces] - quebra linha nos espaços, fazendo com que ele se mantenha dentro da área delimitada*/
+            
+        word-wrap: break-word; /* quebra uma palavra caso ela seja muito grande para caber na linha */
+        word-break: normal; /* define quando o texto deve ter uma quebra de linha: [break-all] - */
+                                                                          /* [keep-all] - */
+
+        writing-mode: horizontal-tb; /* define o sentido em que o texto deverá ser lido: - [horizontal-tb] - padrão */
+                                                                                        /* [vertical-rl] - de cima para baixo e da direita para esquerda */
+                                                                                        /* [vertical-lr] - de cima para baixo e da esquerda para direita */
+
+        text-overflow: ellipsis; /* define a orientação do texto: - [clip] - padrão */
+                                                                 /* [ellipsis] - adiciona reticências indicando que tem mais conteúdo e que o texto está cortado*/
+                                                                 /* [string]  - */
+        }
+        .exemplo {
+            width: 370px;
+            border: 1px solid black;
+        }
+        
+        a {
+            text-decoration: line-through; /* [none] - tira o sublinhado do link ou texto */
+                                           /* [underline] - coloca o sublinhado no texto */
+                                           /* [overline] - coloca uma linha acima do texto */
+                                           /* [line-through] - coloca uma linha sobre o texto */
+            
+            text-decoration-style: double; /* [dotted] - cria pontos formando uma linha */
+                                           /* [dashed] - cria uma linha com vários traços */
+                                           /* [wavy] - cria um estilho de linha ondulada */
+
+            text-decoration-color: green;
+
+            text-decoration-thickness: 5px; /* espessura da linha */
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>text-transform</code></h1>
+    <p>É RESPONSÁVEL por definir quais caracteres vão estar em Maiúsculo, minúsculo, etc.</p>
+
+    <br><br>
+
+    <h1>Propriedade <code>text-align</code></h1>
+    <p class="exemplo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum ratione ipsam pariatur voluptate nihil eligendi 
+        numquam mollitia officiis ipsum a nesciunt adipisci, sequi exerciationem odio deleniti quam quisquam quo.</p>
+
+    <br><br>
+
+    <h1>Propriedade <code>text-decoration</code></h1>
+    <p>Adiciona ou remove linhas no nosso texto: sejam linhas em cima, no meio, ou embaixo.</p>
+    
+    <p>É uma propriedade abrevidade de:
+        <ul>
+            <li><code>text-decoration-line</code></li>
+            <li><code>text-decoration-style</code></li>
+            <li><code>text-decoration-color</code></li>
+            <li><code>text-decoration-thickness</code></li>
+        </ul>
+    </p>
+
+    <a href="#">Link de Exemplo</a>
+
+    <br><br>
+
+    <h1>Propriedade <code>text-ident</code></h1>
+    <p>Define o recuo da primeira linha do nosso texto. Exemplo: </p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum ratione ipsam pariatur voluptate nihil eligendi 
+        numquam mollitia officiis ipsum a nesciunt adipisci, sequi exerciationem odio deleniti quam quisquam quo.</p>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        .exemplo {
+            background-color: palevioletred;
+            width: 200px;
+            height: 200px;
+            border-style: dotted; /* [solid] [double] [groove] [ridge] [inset] [outset] também pode se aplicar borda mista passando dois valores */
+            border-width: 10px 20px; /* esoessura da borda */
+            border-color: greenyellow white coral blue; /* cor da borda */
+            /* só utilizando a propriedade [border], também conseguimos obter os mesmos resultados acima */
+            border-radius: 20px 50px; /* muda os cantos da borda (usando 50% transforma em um círculo) */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+
+    <div class="exemplo"></div>
+
+    <br><br>
+
+    <h1>Bordas com Imagens</h1>
+    <p>Se faz necessário aplicar uma borda normal para poder ser visualizado os tipos de bordas</p>
+    <ul>
+        <li>border-image-source</li> 
+        <br>
+        <li>border-image-width</li>
+            <ul>
+                <li>tamanho da borda</li>
+            </ul>
+        <br>
+        <li>border-image-repeat</li>
+            <ul>
+                <li>repeat</li>
+                <li>stretch</li>
+                    <ul>
+                        <li>estica as regiões 5, 6, 7 e 8 para caber nas bordas</li>
+                    </ul>
+                <li>round</li>
+                <li>space</li>
+                <ul>
+                    <li>adiciona um espaço para que se ajuste a borda</li>
+                </ul>
+            </ul>
+        <br>
+        <li>border-image-outset</li>
+            <ul>
+                <li>afasta a borda da imagem</li>
+            </ul>
+        <br>
+        <li>border-image-slice</li>
+            <ul>
+                <li>divide a imagem em 9 partes</li>
+            </ul>
+    </ul>
+</body>
+</html>

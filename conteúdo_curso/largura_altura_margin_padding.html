@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        /*
+        * Propriedades Básicas do CSS
+        * width: Largura
+        * height: altura
+        */
+
+        h2 {
+            background: orange;
+            width: 300px; /*existem palavras pré-definidas tipo: [auto], [initial], [inherit=adquire dados do elemento pai]*/
+            height: 300px;
+            margin: 20px 10px 40px; /* com três valores, ele usa topo. bottom e lados // com quatro valores, cima, direita, baixo, esquerda*/
+            padding: 50px;
+        }
+
+        h3 {
+            background: purple;
+            width: 300px;
+            height: 300px;
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+
+        #div-01 {
+            background: lightblue;
+            width: 200px; /* [max-width], [min-width] [min-height], [max-heighth] */
+            height: 200px;
+        }
+        #div-02 {
+            background: lightgreen;
+            height: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h2>Trilha de CSS</h2>
+
+    <br><br>
+
+    <h3>Trilha de CSS</h3>
+
+    <div id="div-01">
+        Sou a div 01
+        <div id="div-02">
+            Sou a div 02
+        </div>
+    </div>
+</body>
+</html>
